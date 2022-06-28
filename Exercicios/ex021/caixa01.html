@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgreen;
+            /*Codigo simplicado tem que seguir esssa ordem
+                   width -> style -> color
+            border: 10px solid darkgreen
+            
+            
+            A mesma coisa serve para o padding e outros, obs! 
+            tem que serguir o sentido do relógio: cima, direita, baixa, esquerda
+            
+            Outra maneira de simplicar esse seguimento é fazendo um padding: (se todos os pedding possuir a mesma medidas: simplifique dessa maneira padding: 10px por exemplo, pois assim reconhece que sao a mesma medida para todos*/
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+
+            margin: auto; /*centralizar a caixa no meio indepedende do tamanho da tela*/
+            margin-top: 20px;
+            margin-right: 20apx;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        a {
+            border-width: 3px;
+            border-style: solid;
+            border-color: darkred;
+
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixa boxa-level</h1>
+    <p>Paragrafos tambem sao exemplos de box-level, mas os <a href="#">Links sao exemplos de caixas inline-level</a>Vamos ver como tudo isso funciona.</p>
+    
+</body>
+</html>
