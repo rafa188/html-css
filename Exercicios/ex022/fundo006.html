@@ -8,16 +8,25 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
-            background-image:  url('imagens/wallpaper002.jpg');
+            /*background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+            
 
+            /* SHorthand - background 
+            color > image > position > repeat > [size] > attachment
+            */
+            /*[size] esta nessa  ordem no shorthand mas ainda o navegador não reconhece*/
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+            background-size: cover;
         }
+      
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,6 +39,9 @@
     <main >
         <h1> Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique praesentium quae adipisci doloribus deserunt aperiam sit fuga quia quasi molestiae repudiandae culpa ea iure saepe, mollitia placeat maxime error quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deserunt eveniet cupiditate repellendus, laborum, fugiat, ipsum maiores obcaecati atque expedita dignissimos nihil vitae error ad eum cumque odit tempore! Aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, vel vero quisquam porro est alias, eos ea deserunt sequi id ipsum veritatis voluptatum blanditiis debitis doloremque totam tempore voluptates earum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio consequatur iste aspernatur fugiat doloremque odit repellat? Fuga error repellendus veritatis tempore ea beatae, debitis commodi facere labore ab explicabo!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quos ratione, deleniti qui reiciendis perferendis praesentium ea, tenetur sed ex cupiditate neque, suscipit provident quam eligendi consectetur facere. Nesciunt, reprehenderit?
+        </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere molestias dolorum distinctio expedita corrupti nulla dolores, quidem reiciendis amet repellat. Ad rerum ducimus dolore, laboriosam sit reprehenderit quam quae! Ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolorem, fuga similique, impedit perspiciatis quo esse soluta quas error voluptatum dolor culpa corrupti officia, neque quaerat doloremque at blanditiis quae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt maiores nemo temporibus accusantium vitae obcaecati maxime, laudantium error. Reprehenderit omnis recusandae accusamus dicta officiis quod ad, labore consequatur suscipit quis.</p>
     </main>
 </body>
 </html>
